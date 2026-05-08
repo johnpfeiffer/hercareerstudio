@@ -1,0 +1,9 @@
+
+
+*squarespace*
+*.BAK*
+TEMP/
+
+*.swp
+./cache
+
