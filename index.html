@@ -11,7 +11,7 @@
     <link rel="icon" href="static/images/favicon.ico">
     <link rel="stylesheet" href="static/css/main.css">
   </head>
-  <body>
+  <body class="home-page">
     <a class="announcement" href="resources/free-resume-template/">
       Click here to get your free ATS-friendly r&eacute;sum&eacute; template that converts!
     </a>
@@ -39,6 +39,152 @@
           <a class="hero-cta" href="resources/free-resume-template/">Freebies</a>
         </div>
       </section>
+
+      <section class="intro-section" aria-labelledby="intro-heading">
+        <h2 id="intro-heading">
+          Thrive at work so you can
+          <span class="text-underline">thrive in life!</span>
+        </h2>
+
+        <div class="intro-copy">
+          <p>
+            Our passion is to help women <strong>build confidence</strong> and
+            <strong>find clarity</strong> so they can <strong>get opportunities</strong>
+            in their <strong>careers</strong> through <strong>education</strong>,
+            <strong>encouragement</strong>, and <strong>coaching</strong>.
+          </p>
+
+          <p>
+            Starting with getting clear on your goals and job hunting best practices
+            to communicating clearly and confidently to executives:<br>
+            Her Career Studio is designed to help you achieve your career goals.
+          </p>
+
+          <p>
+            &#128155;&#128155;&#128155; Let's get you unblocked on job woes so you
+            can enjoy that beautiful life of yours and cry happy tears &#129402;!
+            &#128155;&#128155;&#128155;
+          </p>
+        </div>
+
+        <svg class="wave-divider" viewBox="0 0 1440 160" aria-hidden="true" focusable="false">
+          <path d="M-20 46 C 250 78, 435 95, 690 64 S 1095 10, 1460 54"></path>
+        </svg>
+
+        <h2 class="why-heading">Why are you here today?</h2>
+
+        <div class="reason-grid" aria-label="Career support paths">
+          <article class="reason-card">
+            <div class="reason-copy">
+              <h3>Seeking Clarity</h3>
+              <p>&ldquo;What should I do next in my career?&rdquo;</p>
+              <p>
+                You are in transition and wondering what positions you qualify
+                for and how to go about your next steps. Maybe you are returning
+                to work after a leave, or you want to make a change in your
+                career path.
+              </p>
+              <p>We got you boo! Click <a href="#contact">here</a> to get unblocked.</p>
+            </div>
+            <img
+              src="static/images/image-asset-1.jpeg"
+              alt="Woman holding sunglasses in front of a yellow wall"
+              loading="lazy"
+            >
+          </article>
+
+          <article class="reason-card">
+            <div class="reason-copy">
+              <h3>Job Search</h3>
+              <p>&ldquo;I&rsquo;m trying to find a new job.&rdquo;</p>
+              <p>
+                Get the support and guidance needed to crack the recruiter code
+                and land interviews. Then, convert those interviews into job offers.
+              </p>
+              <p>
+                Between r&eacute;sum&eacute; best practices and free reviews from experts
+                to interview prep and negotiations, we got you covered!
+              </p>
+              <p>
+                Click <a href="resources/free-resume-template/">here</a> to kiss
+                your job search woes goodbye!
+              </p>
+            </div>
+            <img
+              src="static/images/image-asset-3.jpeg"
+              alt="Woman at a laptop biting a pencil"
+              loading="lazy"
+            >
+          </article>
+
+          <article class="reason-card">
+            <div class="reason-copy">
+              <h3>Confidently Communicate My Value</h3>
+              <p>
+                &ldquo;I am not comfortable promoting my skills and achievements.&rdquo;
+              </p>
+              <p>
+                You want to get noticed. But, you struggle to confidently and
+                comfortably promote yourself without feeling boastful.
+              </p>
+              <p>
+                Yep, we understand. This is challenging for almost everyone, and
+                especially women.
+              </p>
+              <p>Click <a href="#contact">here</a> to start building your confidence.</p>
+            </div>
+            <img
+              src="static/images/Business+Women.png"
+              alt="Woman holding a megaphone against a yellow background"
+              loading="lazy"
+            >
+          </article>
+
+          <article class="reason-card">
+            <div class="reason-copy">
+              <h3>Grow Leadership Skills</h3>
+              <p>
+                &ldquo;I am leading a team and want to communicate effectively and do
+                my best.&rdquo;
+              </p>
+              <p>
+                As a new leader, you want to make a good first impression and need
+                to get your team on board because their work reflects you. Whether
+                you are a seasoned leader or new to leadership, leading a new team
+                is always challenging and can be lonely.
+              </p>
+              <p>
+                But, you are not alone! We are here. Click
+                <a href="#contact">here</a> to get support.
+              </p>
+            </div>
+            <img
+              src="static/images/image-asset-5.jpeg"
+              alt="Woman in a magenta outfit smiling outdoors"
+              loading="lazy"
+            >
+          </article>
+        </div>
+
+        <svg
+          class="wave-divider wave-divider--cards"
+          viewBox="0 0 1440 120"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path d="M-20 96 C 250 72, 430 76, 690 98 S 1095 118, 1460 88"></path>
+        </svg>
+      </section>
     </main>
+
+    <script>
+      const updateHeaderState = () => {
+        document.body.classList.add("js-header-ready");
+        document.body.classList.toggle("is-scrolled", window.scrollY > 80);
+      };
+
+      updateHeaderState();
+      window.addEventListener("scroll", updateHeaderState, { passive: true });
+    </script>
   </body>
 </html>
